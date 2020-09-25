@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul li{
+            color: green;
+        }
+        #lecture>li{
+            border: 1px solid red;
+            color: blue;
+        }
+        ul,ol{
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>php</li>
+        <li>mysql</li>
+    </ul>
+
+    <ol id="lecture">
+        <li>HTML</li>
+        <li>CSS
+            <ol>
+                <li>tag selector</li>
+                <li>class selector</li>
+                <li>id selector</li>
+            </ol>
+        </li>
+        <li>Javascript</li>
+        <li>php</li>
+        <li>mysql</li>
+    </ol>
+</body>
+</html>
+<!-- 
+부모 자식 선택자는 ol태그밑에 li태그처럼 ol는 부모 선택자(위에 있음) li는 자식 선택자(밑에 있음)의 관계를 나타내는 말이다.
+ul li{color: green;}이 코드의 뜻은 ul밑에 있는 모든 li태그에 대해서 초록색으로 적용하라는 뜻이다.
+#lecture>li{border: 1px solid red;color: blue;}이 코드의 뜻은 lecture라는 아이디값을 가진 태그의 바로 밑에 있는(직계 자식) 태그에 테두리를 1px 단선 빨간색으로 적용하는 것이다. 하지만 color 같은 경우는 상속이라는 개념으로 인해 lecture밑에 있는 모든 색을 파란색으로 바꾼다.
+ul,ol{background-color: powderblue;} 이코드의 뜻은 모든 ul, ol의 배경색을 파우더 블루로 바꾸는 코드로 같은 코드를 여러 번 적는 대신 같은 코드를 공유하는 태그들을 한번에 묶을 때 사용한다. -->

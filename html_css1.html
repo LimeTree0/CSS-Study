@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h2{
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: red;">Hell world</h1>
+    <h2>Hello world</h2>
+</body>
+</html>
+html과 css가 서로 동작하게 하는 방법에는 2가지가 있다.
+첫번째 <h1 style="color: red;">Hell world</h1>과 같이 html 태그에 직접적으로 css 를 넣는 방법
+두번째 <style>h2{color:blue;}</style>과 같이 헤드에 따로 css를 넣는 방법
+
+<!-- 첫번째 방법같은 경우는 h1에 style(html문법임)이라는 속성을 넣고 그안에 css를 넣어 작성한다.
+이 방법같은 경우는 속성을 넣어준 특정한 태그만 css문법이 적용된다. 다시 말해 h1 태그가 100만개가 있어도
+속성을 지정한 태그만 css를 적용받는다.
+
+두번째 방법은 head에 style이라는 태그를 만들어 주는 것인데 이방법같은 경우는 내가 css를 적용시키기를 원하는
+태그를 적고 태그뒤에 대괄호를 붙인뒤 그안에 바꾸고 싶은 값을 css로 바꿔준다. 그방법같은 경우는 특정한 태그를 
+바꾸는 방법으로 h1태그가 100만개가 있으면 100만개 전부를 css를 통해 바꿀 수 있다.  -->

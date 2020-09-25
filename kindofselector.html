@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        #select{
+            color :green;
+            /* font-size: 100px; */
+        }
+        .deactive{
+            color : blue;
+            /* text-decoration: line-through; */
+        }
+        li{
+            color : red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="deactive">HTML</li>
+        <li id="select">CSS</li>
+        <li class="deactive">Javascript</li>
+        <li>php</li>
+        <li>mysql</li>
+    </ul>
+</body>
+</html>
+<!-- 
+선택자에는 3가지 종류가 있다. 태그 선택자, 아이디 선택자, 클래스선택자
+태그 선택자의 경우 li{color : red;} 이런 형식으로 쓰며 모든 li 태그에 대해 css 효과를 주며 우선 순위가 가장 낮다.
+아이디 선택자의 경우 css는 #select{color :green;} 이렇게 <li id="select">CSS</li>아이디는 이렇게 사용하며
+id값이 일치하는 태그에 대해서만 css효과를 준다. 가장 우선순위가 높다.
+클래스 선택자의 경우 css는 이렇게 .deactive{color : blue;} html은 <li class="deactive">Javascript</li>
+이렇게 사용하며 class로 묶여 있는 모든 태그들에 대해 css를 적용한다.
+
+같은 아이디 속성을 가진 태그를 여러개 묶어서 css를 적용시킬 수 도 있지만 아이디의 정의(아이디는 단 한번만 나온다)에 어긋나기 때문에 클래스 속성을 이용하여 같은 id같을 가진 태그를 묶는다.  -->

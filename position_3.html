@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent, #other{border : 1px solid tomato;}
+        #parent{
+            position: static;
+        }
+        #me{
+            background-color: black;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 30px;
+            text-align: center;
+            width: 100%;
+        }
+        #large{
+            height: 10000px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body style="padding-top: 30px;">
+    <div id="other">other</div>
+        <div id="parent">
+            parent
+            <div id="me">me</div>
+        </div>
+    </div>
+    <div id="large">large</div>
+
+</body>
+</html>
+
+<!-- position : fixed는 absolute랑 유사한 성질이 있다. 자신의 컨텐츠크기만큼 공간을 차지하며 부모태그와의 연결이 끊기고 html을 기준으로 위치가 지정되지만 absolute랑 다르게 스크롤로 내리게 되면 위치한 곳에서 계속 고정되어 있는 상태로 있다. 그래서 가장 윗쪽에 배치하는 메뉴바 같은 형식으로 쓸 수 있고 그렇게 되면 넓이만큼 본문이 가려지기 때문에 body태그에 padding에 fixed만큼의 크기를 줘 가리지 않게 하는 방법이 있다.-->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{border : 1px solid gray;}
+        div{
+            border:5px solid tomato;
+            margin: 10px;
+        }
+        #me{
+            position: relative;
+            /* position offset */
+            right: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+</body>
+</html>
+
+<!-- position offset을 통해서 자신의 컨텐츠의 위치를 바꿀 수 있다.
+기본적인 상태는 static이고 relative면 부모와 상대적으로 위치를 움직일 수 있다. -->
